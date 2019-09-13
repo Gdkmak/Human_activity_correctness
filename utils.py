@@ -249,14 +249,14 @@ def train_test(X, Y):
     """
    
     all_subject = np.arange(start= 1,stop= 11, dtype=int)
-    num_mov = len(set(Y[:,1]))
-
-    for m in range (num_mov):
-                      
+    num_mov = set(Y[:,1])
+    i = 0
+    for m in num_mov:
+        i +=1              
         ran_test = np.random.choice(all_subject, 1, replace=False).tolist() # number one indicate to get only one subject
-        test_idx =  np.where((Y[:,0].astype(int) == ran_test) & (Y[:,1].astype(int) == m+1))
-        train_idx = np.where((Y[:,0].astype(int) != ran_test) & (Y[:,1].astype(int) == m+1))
-        if m+1 == 1 :
+        test_idx =  np.where((Y[:,0].astype(int) == ran_test) & (Y[:,1].astype(int) == m))
+        train_idx = np.where((Y[:,0].astype(int) != ran_test) & (Y[:,1].astype(int) == m))
+        if i == 1 :
             X_train_o = X[train_idx]
             Y_train_o =  Y[train_idx] 
             X_test_o = X[test_idx]
