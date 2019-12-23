@@ -13,4 +13,5 @@ This possible approach is to draw new frame(s) between two existing frames by us
 
 This suggests to locate and draw new joints coordinates on the trajectory if only the difference between two consecutive frames exceeds a certain threshold. The difference will be called gap. The gap is the absolute difference between the summation of all x coordinates in two consecutive frames. i is the number of frame in the gesture and j is the number of coordinates in the same gesture. Please refer to the notation below. 
 
-`〖gap〗_i=| ∑_(j=1)^n▒X_ij - ∑_(j=1)^n▒〖X_((i+1)j)  〗|`
+![alt text](https://github.com/Gdkmak/Human_activity_correctness/blob/master/Annotation%202019-12-23%20152534.png "equation")
+
