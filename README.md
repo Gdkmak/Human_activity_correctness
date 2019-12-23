@@ -1,8 +1,8 @@
-# Project aim:
+# Evaluating Pre-processing Methods with Deep Learning Algorithms on Human Activity Skelton Data Obtained from Kinect and Vicon Sensors
 
-The aim, here, is to investigate how to yield optimal results in this field by trying various different approaches at every stage of skeleton data processing; as a consequence of this work, HAR might take a significant step forward.
+##### The aim, here, is to investigate how to yield optimal results in this field by trying various different approaches at every stage of skeleton data processing; as a consequence of this work, HAR might take a significant step forward.
  
-In order to achieve this aim, we will be using an open access dataset called UI-PRMD. This data was collected by Idaho University using a Vicon optical tracker, and a Kinect camera. The data provides the angles and positions of body joints in relation to patients (subjects) who were undergoing physical therapy and rehabilitation programs which required the undertaking of common exercises such as deep squats, standing shoulder abduction etc.
+##### In order to achieve this aim, we will be using an open access dataset called UI-PRMD. This data was collected by Idaho University using a Vicon optical tracker, and a Kinect camera. The data provides the angles and positions of body joints in relation to patients (subjects) who were undergoing physical therapy and rehabilitation programs which required the undertaking of common exercises such as deep squats, standing shoulder abduction etc.
 
 
 
