@@ -18,6 +18,8 @@ This suggests to locate and draw new joints coordinates on the trajectory if onl
 
 The average of gaps in each gesture will be taken. The same process will be repeated for all gestures from the same classification in the same movement. This process will result in a scalar. For example, if I have 100 incorrect gestures and 100 correct gestures in movement number 5. After calculating the average of gaps in each gesture, we will end up with a scalar of 100 elements for incorrect gestures and another scalar with 100 elements for correct gesture. The average of each scalar is the threshold of each classification in the movement number 5.  
 
-Now we calculated the gap and the threshold, what are they useful for? Now we go again to the gesture and check if a gap exceeds a threshold, then joints coordinates values will be polynomially interpolated to draw a new frame(s) on a trajectory between two frames. 
+Now we calculated the gap and the threshold, what are they useful for? Now we go again to the gesture and check if a gap exceeds a threshold, then joints coordinates values will be polynomially interpolated to draw a new frame(s) on a trajectory between two frames.
+
+![alt text](https://github.com/Gdkmak/Human_activity_correctness/blob/master/skeleton.png "skeleton")
 
 This figure shows two consecutive frames in elbow flexion gesture. The gap between the frames in the right arm space is relatively big and exceeded the threshold. Therefore, we filled this gap with a body coordinates and hence a frame. 
